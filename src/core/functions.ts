@@ -1,7 +1,11 @@
 import { Expression } from "./types";
 import { assertNever } from "../utils";
+// import Availability from "../../../qs-web-platform/packages/model/src/Availability"
 
 export function evaluate(expr: Expression): number {
+    // const testModel = new Availability();
+    // console.warn(testModel.getGroup())
+    console.warn('TEST')
     switch (expr.type) {
         case "literal": {
             return expr.value;
